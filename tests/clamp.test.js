@@ -1,16 +1,16 @@
 import clamp from '../src/clamp.js';
 
 test('normal operation', () => {
-    expect(clamp(100, 50, 25)).toBe(50);
+    expect(clamp(-10, -5, 5)).toBe(-5);
 });
 
 test('same lower and upper bound', () => {
-    expect(clamp(100, 100, 10)).toBe(100);
+    expect(clamp(10, 100, 100)).toBe(100);
 });
 
 
 test('normal operation', () => {
-    expect(clamp(10,20,30)).toBe(20);
+    expect(clamp(10, -5, 5)).toBe(5);
 });
 
 test('null and undefined test', () => {
