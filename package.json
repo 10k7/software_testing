@@ -16,6 +16,9 @@
     },
     "setupFilesAfterEnv": [
       "./tests/testSetup.js"
+    ],
+    "collectCoverageFrom": [
+      "src/**.js"
     ]
   },
   "devDependencies": {
