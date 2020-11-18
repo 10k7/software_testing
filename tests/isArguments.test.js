@@ -10,7 +10,7 @@ test('valid arguments', () => {
 });
 
 test('random array', () => {
-    const input = [a,s,d];
+    const input = ['a','s','d'];
     const expected = false;
     expect(isArguments(input))
     .toEqual(expected);
