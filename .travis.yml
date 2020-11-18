@@ -6,10 +6,7 @@ node_js:
 script: echo "Running tests against $(node -v)..."
 
 jobs:
-  allow_failures:
-    - name: "Test failure allowed"
   include:
     - stage: Produce Coverage
-      name: "Test failure allowed"
       node_js: node
-      script: jest --coverage && coveralls < coverage/lcov.info
+      script: jest --coverage && coveralls < coverage/lcov.info || true
