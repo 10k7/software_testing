@@ -15,7 +15,7 @@
       "^.+\\.[t|j]sx?$": "babel-jest"
     },
     "setupFilesAfterEnv": [
-      "./tests/testSetup.js"
+      "./testSetup.js"
     ],
     "collectCoverageFrom": [
       "src/**.js"
