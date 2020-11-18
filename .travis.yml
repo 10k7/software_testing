@@ -7,6 +7,7 @@ script: echo "Running tests against $(node -v)..."
 
 jobs:
   allow_failures:
-    - stage: Produce Coverage
-      node_js: node
-      script: jest --coverage && coveralls < coverage/lcov.info
+    include:
+      - stage: Produce Coverage
+        node_js: node
+        script: jest --coverage && coveralls < coverage/lcov.info
