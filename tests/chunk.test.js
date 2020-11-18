@@ -8,8 +8,7 @@ test('get value from empty array', () => {
     expect(chunk(['a', 'b', 'c'], 4)).toStrictEqual([['a', 'b', 'c', undefined]])
 });
 
-// This shouldn't return undefined
 test('get value from empty array', () => {
-    expect(chunk(['a', 'b', 'c', 'd'], 2)).toEqual([[ 'c', 'd'], undefined]);
+    expect(chunk(['a', 'b', 'c', 'd'], 2)).toEqual([['a','b'],['c','d']]);
 
 });

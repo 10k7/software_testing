@@ -8,14 +8,14 @@ test('two negative numbers', () => {
     expect(divide(-1,-1)).toBe(1);
 });
 
-test('normal operation', () => {
-    expect(divide(-1,-2)).toBe(1);
+test('return floating point number', () => {
+    expect(divide(-1,-2)).toBe(0.5);
 });
 
 test('invalid input', () => {
     expect(divide(1,'hello world')).toBe(NaN);
 });
 
-test('infinity divide by inifnity', () => {
+test('divide infinity by inifnity', () => {
     expect(divide(Infinity, Infinity)).toBe(NaN);
 });
