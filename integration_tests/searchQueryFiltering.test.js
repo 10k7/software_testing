@@ -4,7 +4,7 @@ import filter from '../src/filter.js';
 import toNumber from '../src/toNumber.js';
 
 
-test.skip("Integration test: search query filtering", () => {
+test.skip("Search query filtering", () => {
     const query = "phones and food"
     const parsed_query = words(query)
     expect(parsed_query)
