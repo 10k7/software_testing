@@ -1,7 +1,7 @@
 const { test, expect } = require('@jest/globals');
 
-import get from './src/get.js'
-import add from './src/add.js';
+import get from '../src/get.js'
+import add from '../src/add.js';
 
 test('Adding price to shopping cart', () => {
     const products = {

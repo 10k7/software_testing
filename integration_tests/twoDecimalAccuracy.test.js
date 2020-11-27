@@ -1,7 +1,7 @@
 const { test, expect } = require('@jest/globals');
 
-import get from './src/get.js'
-import ceil from './src/ceil.js';
+import get from '../src/get.js'
+import ceil from '../src/ceil.js';
 
 test('Two decimal accuracy in prices', () => {
     const products = {

@@ -1,7 +1,7 @@
 const { test, expect } = require('@jest/globals');
 
-import map from './src/map.js'
-import isEmpty from './src/isEmpty.js'
+import map from '../src/map.js'
+import isEmpty from '../src/isEmpty.js'
 
 test('Producer leaves empty fields', () => {
 

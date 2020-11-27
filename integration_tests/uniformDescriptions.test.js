@@ -1,10 +1,10 @@
 const { test, expect } = require('@jest/globals');
 
-import endsWith from './src/endsWith.js'
-import capitalize from './src/capitalize.js'
-import words from './src/words.js'
-import map from './src/map.js'
-import upperFirst from './src/upperFirst.js'
+import endsWith from '../src/endsWith.js'
+import capitalize from '../src/capitalize.js'
+import words from '../src/words.js'
+import map from '../src/map.js'
+import upperFirst from '../src/upperFirst.js'
 
 test('Uniform product descriptions', () => {
     const description = "this is a product description. this should look like all the other ones.";
